@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome/public_api';
 
 @Component({
   selector: 'app-root',
