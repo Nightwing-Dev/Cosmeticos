@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { FaIconComponent } from '@fortawesome/angular-fontawesome/public_api';
+import {faHeart} from '@fortawesome/free-solid-svg-icons';
+import {faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import {faUser} from '@fortawesome/free-solid-svg-icons';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +11,8 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome/public_api';
 })
 export class AppComponent {
   title = 'cosmeticos';
+  fahear = faHeart;
+  faShoppingIcon = faShoppingCart;
+  faUserIcon = faUser;
+  faBarsIcon = faBars;
 }
