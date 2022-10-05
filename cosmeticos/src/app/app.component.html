@@ -2,9 +2,11 @@
 
   <input type="checkbox" name="" id="toggler">
   <label for="toggler"></label>
-  <fa-icon [icon]="faBarsIcon"></fa-icon>
+  <fa-icon [icon]="faBarsIcon" class="faBarsIcon"></fa-icon>
   <a href="#" class="logo">Cromatic <span class="font">Para ti</span></a>
 
+
+<!-- inicio del navbar -->
   <nav class="navbar">
     <a href="#inicio">Inicio</a>
     <a href="#acerca">Acerca</a>
@@ -13,12 +15,367 @@
     <a href="#contact">Contacto</a>
   </nav>
 
+<!--customizacion de iconos utiliza npm y llamado de variable atravez de import-->
+
   <div class="icons">
     <fa-icon [icon]="fahear"></fa-icon>
     <fa-icon [icon]="faShoppingIcon"></fa-icon>
     <fa-icon [icon]="faUserIcon"></fa-icon>
   </div>
-
 </header>
 
-<router-outlet></router-outlet>
+<!--inicio del home-->
+<section class="home" id="inicio">
+  <div class="content">
+    <h3>Comesticos Modernos</h3>
+    <span>Hechos para ti</span>
+    <p>❝Porque sabemos como te gustan, porque eres hermosa y mereces verte bella,
+      saca a relucir esa maravillosa mujeres que eres con nuestros maravillosos productos❞
+    </p>
+    <a href="#" class="btn">Comprar Ahora!</a>
+  </div>
+</section>
+
+<!--inicio del acerca de-->
+<section class="about" id="acerca">
+  <h1 class="heading"><span>Acerca </span>De Nosotros</h1>
+  <div class="row">
+    <div class="video-container">
+      <video src="../assets/about-vid.mp4" loop autoplay muted></video>
+      <h3>Los Mejores accesorios para ti</h3>
+    </div>
+
+    <div class="content">
+      <h3>Porque Escogernos?</h3>
+      <p>Ofrecemos los mejores servicios para maquillaje y productos de belleza, donde primamos el precio</p>
+      <p>Productos originales, traidos desde el exterior a precios relativamente bajos. Que esperas para hacerte con el tuyo!</p>
+      <a href="#" class="btn">Reservalo ahora</a>
+  </div>
+
+  </div>
+</section>
+
+<section class="icons-container">
+
+  <div class="icons">
+      <img src="../assets/icon-1.png" alt="">
+      <div class="info">
+          <h3>Domicilio Gratis</h3>
+          <span>En todas tus ordenes</span>
+      </div>
+  </div>
+
+  <div class="icons">
+      <img src="../assets/icon-2.png" alt="">
+      <div class="info">
+          <h3>Devolucion facil</h3>
+          <span>Reembolso garantizado</span>
+      </div>
+  </div>
+
+  <div class="icons">
+      <img src="../assets/icon-3.png" alt="">
+      <div class="info">
+          <h3>Ofertas & Regalos</h3>
+          <span>En todas tus ordenes</span>
+      </div>
+  </div>
+
+  <div class="icons">
+      <img src="../assets/icon-4.png" alt="">
+      <div class="info">
+          <h3>Pagos Seguros</h3>
+          <span>Ofrecemos seguridad</span>
+      </div>
+  </div>
+ 
+</section>
+
+
+<section class="products" id="productos">
+
+  <h1 class="heading"> Ultimos  <span>Productos</span> </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+              <img src="../assets/D1.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #1</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <span class="discount">-15%</span>
+          <div class="image">
+              <img src="../assets/D2.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar Carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #2</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <span class="discount">-5%</span>
+          <div class="image">
+              <img src="../assets/D3.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar Carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #3</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <span class="discount">-20%</span>
+          <div class="image">
+              <img src="../assets/D4.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar Carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #4</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <span class="discount">-17%</span>
+          <div class="image">
+              <img src="../assets/D5.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar Carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #5</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <span class="discount">-3%</span>
+          <div class="image">
+              <img src="../assets/D6.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar Carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #6</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <span class="discount">-18%</span>
+          <div class="image">
+              <img src="../assets/D7.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar Carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #7</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <span class="discount">-10%</span>
+          <div class="image">
+              <img src="../assets/D8.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar Carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #8</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          <span class="discount">-5%</span>
+          <div class="image">
+              <img src="../assets/D9.webp" alt="">
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">Agregar Carrito</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>Cosmetico #9</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+  </div>
+
+</section>
+
+
+<section class="review" id="review">
+
+<h1 class="heading"> Cliente <span>reviews</span> </h1>
+
+<div class="box-container">
+
+  <div class="box">
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+      <div class="user">
+          <img src="../assets/myAvatar.png" alt="">
+          <div class="user-info">
+              <h3>Cliente 1</h3>
+              <span>happy customer</span>
+          </div>
+      </div>
+      <span class="fas fa-quote-right"></span>
+  </div>
+
+  <div class="box">
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+      <div class="user">
+          <img src="../assets/myAvatar(1).png" alt="">
+          <div class="user-info">
+              <h3>Cliente 2</h3>
+              <span>Medellin/colombia</span>
+          </div>
+      </div>
+      <span class="fas fa-quote-right"></span>
+  </div>
+
+  <div class="box">
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+      <div class="user">
+          <img src="../assets/myAvatar(2).png" alt="">
+          <div class="user-info">
+              <h3>Cliente 3</h3>
+              <span>Medellin/Colombia</span>
+          </div>
+      </div>
+      <span class="fas fa-quote-right"></span>
+  </div>
+
+</div>
+  
+</section>
+
+
+<section class="contact" id="contacto">
+
+  <h1 class="heading"> <span> Contactame </span> para negocios </h1>
+
+  <div class="row">
+
+      <form action="">
+          <input type="text" placeholder="Escribe tu nombre" class="box">
+          <input type="email" placeholder="Escribe tu email" class="box">
+          <input type="number" placeholder="Escribe tu numero" class="box">
+          <textarea name="" class="box" placeholder="Escribe tu asunto" id="" cols="30" rows="10"></textarea>
+          <input type="submit" value="Enviar Mensaje" class="btn">
+      </form>
+
+      <div class="image">
+          <img src="../assets/9Xz-70271698_m.jpg" alt="">
+      </div>
+
+  </div>
+
+</section>
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>links Rapidos</h3>
+          <a href="#">Inicio</a>
+          <a href="#">Acerca</a>
+          <a href="#">Productos</a>
+          <a href="#">Reviews</a>
+          <a href="#">Contacto</a>
+      </div>
+
+      <div class="box">
+          <h3>Contacto Links</h3>
+          <a href="#">Mi Instagram</a>
+          <a href="#">Mi Facebook</a>
+          <a href="#">Mi Twitter</a>
+      </div>
+
+      <div class="box">
+          <h3>Ubicados en:</h3>
+          <a href="#">Medellin</a>
+          <a href="#">Bogota</a>
+          <a href="#">Tolima</a>
+          <a href="#">Cartagena</a>
+      </div>
+
+      <div class="box">
+          <h3>contacto info</h3>
+          <a href="#">+57-3127421361</a>
+          <a href="#">contacto@gmail.com</a>
+          <a href="#">Medellin, Colombia - 5001</a>
+          <img src="../assets/payment.png" alt="">
+      </div>
+
+  </div>
+
+  <div class="credit"> created x <span> diegoportafolio.com </span> | all rights reserved </div>
+
+</section>
+
